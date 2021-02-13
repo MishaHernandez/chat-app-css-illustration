@@ -16,36 +16,69 @@
 </head>
 <body>
 
-  Samuel Green
-  Available to Walk
+  <div class="container">
+    <section class="section-one">
+      <!-- pattern -->
+      <div class="phone">
+        <!-- before?? -->
+        <div class="phone__header">
+          <img src="images/avatar.jpg" alt="chat avatar">
+          <!-- before for arrow -->
+          <div class="phone__header-info">
+            <p class="phone__header-name">Samuel Green</p>
+            <p class="phone__header-state">Available to Walk</p>
+          </div>
+          <!-- after for dots -->
+        </div>
+      
+        <p class="bubble">That sounds great. I’d be happy with that.</p>
+      
+        <p class="bubble">Could you send over some pictures of your dog, please?</p>
 
-  That sounds great. I’d be happy with that.
+        <p class="bubble-container">
+          <img class="bubble-container__image" src="images/dog-image-1.jpg" alt="dog image">
+          <img class="bubble-container__image" src="images/dog-image-2.jpg" alt="dog image">
+          <img class="bubble-container__image" src="images/dog-image-3.jpg" alt="dog image">
+        </p>
+      
+        <p class="bubble">Here are a few pictures. She’s a happy girl!</p>
+      
+        <p class="bubble">Can you make it?</p>
+      
+        <p class="bubble">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+      
+        <p class="bubble bubble--price">
+          <span class="bubble--price__time">30 minute walk</span>
+          <span class="bubble--price__amount">$29</span>
+        </p>
+      
+        <p class="bubble bubble--price">
+          <span class="bubble--price__time">1 hour walk</span>
+          <span class="bubble--price__amount">$49</span>
+        </p>
 
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
+        <div class="input">
+          <input class="input__message" type="text" name="" id="message" placeholder="Type a message…">
+          <span class="input__button"></span>
+        </div>
+      </div>
+    </section>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <section class="section-two">
+      <div class="intro">
+        <h1 class="intro__title">Simple booking</h1>
+        <p class="intro__paragraph">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.
+        </p>
+      </div>
+    </section>
+    
+    <section class="attribution">
+      Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank" title="frontend mentor">Frontend Mentor</a>. 
+      Coded by <a class="attribution__link" href="#" title="author">Your Name Here</a>.
+    </section>
   </div>
 </body>
 </html>
