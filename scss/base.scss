@@ -8,3 +8,11 @@ body {
     font-weight: 400;
     background-color: $app-background;
 }
+.container {
+    display: grid;
+
+    @include desktop-up {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
