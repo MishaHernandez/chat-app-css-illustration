@@ -1,0 +1,161 @@
+.phone {
+    width: 247px;
+    background-color: $app-background;
+    border-radius: 1.2rem;
+
+    &__header {
+        background-image: linear-gradient(90deg, $light-violet, $light-magenta);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+        box-shadow: 0 10px 4px rgba(211, 211, 211, .35);
+
+        &-img {
+            width: 28px;
+            border-radius: 50%;
+            border: 1px solid $white;
+        }
+        // &-info {
+        //     p { margin-top: 0; }
+        // }
+        &-name {
+            font-size: 11px;
+            font-weight: 500;
+            color: $white;
+            // margin-bottom: 4px;
+        }
+        &-state {
+            font-size: 10px;
+            color: $sub-heading-app;
+            // margin-bottom: 0;
+        }
+    }
+    &__chat {
+        padding: 4px 8px;
+
+        .bubble {
+            font-size: 8px;
+            width: 128px;
+            padding: 8px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            line-height: 1.2;
+
+            &--left {
+                color: $chat-left;
+                background-color: rgba(216, 158, 255, .15);
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 4px;
+            }
+
+            &--right {
+                color: $chat-right;
+                background-color: $white;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 4px;
+                margin-right: 0;
+                margin-left: auto;
+
+                &:nth-of-type(5) {
+                    width: 80px;
+                    margin-bottom: 1rem;
+                }
+
+                box-shadow: 0 9px 4px -4px rgba(211, 211, 211, .3);
+            }
+
+            &-container {
+                text-align: right;
+                margin-bottom: 0;
+
+                &__image {
+                    width: 2.5rem;
+                    border-radius: 10px;
+                    margin-left: 4px;
+                }
+            }
+
+            &--price {
+                width: 160px;
+                color: $white;
+                padding-right: 1rem;
+                background-image: linear-gradient(90deg, $light-magenta, $light-violet);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:nth-of-type(8) {
+                    margin-bottom: 1rem;
+                }
+
+                &__time {
+                    display: flex;
+                    align-items: center;
+                    &::before {
+                        display: inline-block;
+                        content: "";
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 8px;
+                        border-radius: 50%;
+                        border: 1px solid $sub-heading-app;
+                    }
+                }
+
+                &__amount {
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .input {
+            background-color: $white;
+            border-radius: 15px;
+            padding: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            &__message {
+                width: 90%;
+                border-style: none;
+                font-size: 10px;
+                padding-left: 14px;
+
+                &:placeholder-shown {
+                    color: $placeholder-text;
+                }
+            }
+
+            &__button {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background-color: $submit-button-background;
+                border-radius: 50%;
+
+                &::before,
+                &::after {
+                    display: inline-block;
+                    content: "";
+                    width: 2.8px;
+                    height: 8px;
+                    background-color: $white;
+                    border-radius: 1.4px;
+                }
+
+                &::before {
+                    transform: translate(11px, 0) rotate(130deg);
+                }
+
+                &::after {
+                    transform: translate(8px, 4px) rotate(50deg);
+                }
+            }
+        }
+    }
+}
