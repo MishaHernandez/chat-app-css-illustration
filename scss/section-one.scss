@@ -4,13 +4,19 @@
     &::before {
         display: block;
         content: "";
-        width: 50%;
-        height: 80%;
+        width: 420px;
+        height: 75%;
         background-image: linear-gradient($light-magenta 5%, $light-violet 95%);
-        border-bottom-right-radius: 20rem;
+        border-bottom-right-radius: 14rem;
+        border-bottom-left-radius: 14rem;
         position: absolute;
         z-index: -10;
         top: 0;
+        right: 50%;
+        @include desktop-up {
+            height: 80%;
+            right: 80%;
+        }
     }
 }
 .app {
