@@ -1,9 +1,26 @@
+.section-one {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    &::before {
+        display: block;
+        content: "";
+        width: 50%;
+        height: 80%;
+        background-image: linear-gradient($light-magenta 5%, $light-violet 95%);
+        border-bottom-right-radius: 20rem;
+        position: absolute;
+        z-index: -10;
+        top: 0;
+    }
+}
 .app {
     width: 247px;
     background-color: $app-background;
-    border-radius: 1.2rem;
+    border-radius: 2rem;
     border: 9px solid $white;
-    box-shadow: 0 0 2rem 1rem rgba(212, 212, 212, .8);
+    box-shadow: 1rem 1rem 2rem 1rem rgba(0, 0, 0, .1);
+    margin-left: auto;
+    margin-right: auto;
 
     &__header {
         height: 4.125rem;

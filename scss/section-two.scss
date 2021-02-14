@@ -1,0 +1,19 @@
+.section-two {
+    margin-bottom: 4.5625rem;
+}
+.intro {
+    text-align: center;
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $main-heading;
+    }
+    &__paragraph {
+        width: 320px;
+        color: $paragraph;
+        line-height: 1.75;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
