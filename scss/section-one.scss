@@ -1,21 +1,26 @@
 .section-one {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    @include desktop-up {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     &::before {
         display: block;
         content: "";
-        width: 420px;
-        height: 75%;
+        width: 513px;
+        height: 65%;
         background-image: linear-gradient($light-magenta 5%, $light-violet 95%);
-        border-bottom-right-radius: 14rem;
-        border-bottom-left-radius: 14rem;
+        border-bottom-right-radius: 16rem;
+        border-bottom-left-radius: 16rem;
         position: absolute;
         z-index: -10;
         top: 0;
         right: 50%;
         @include desktop-up {
-            height: 80%;
-            right: 80%;
+            height: 88%;
+            right: 72%;
         }
     }
 }
@@ -25,8 +30,6 @@
     border-radius: 2rem;
     border: 9px solid $white;
     box-shadow: 1rem 1rem 2rem 1rem rgba(0, 0, 0, .1);
-    margin-left: auto;
-    margin-right: auto;
 
     &__header {
         height: 4.125rem;

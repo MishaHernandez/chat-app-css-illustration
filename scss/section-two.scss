@@ -1,8 +1,29 @@
 .section-two {
-    margin-bottom: 4.5625rem;
+    margin-bottom: 4rem;
+    @include desktop-up {
+        margin-bottom: 0;
+
+        &::after {
+            display: block;
+            content: "";
+            width: 513px;
+            height: 85%;
+            background-color: rgba(136, 56, 255, .03);
+            border-top-right-radius: 16rem;
+            border-top-left-radius: 16rem;
+            position: absolute;
+            z-index: -10;
+            bottom: 0;
+            right: -13%;
+        }
+    }
+
 }
 .intro {
     text-align: center;
+    @include desktop-up {
+        text-align: left;
+    }
 
     &__title {
         font-size: 2.5rem;
@@ -13,7 +34,9 @@
         width: 320px;
         color: $paragraph;
         line-height: 1.75;
-        margin-left: auto;
-        margin-right: auto;
+
+        @include desktop-up {
+            width: 450px;
+        }
     }
 }
