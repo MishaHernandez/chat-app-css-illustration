@@ -20,6 +20,8 @@ body {
 .container {
     display: inline-grid;
     justify-items: center;
+
+    flex: 1 0 auto;
     
     @include desktop-up {
         grid-template-columns: 1fr 1fr;
