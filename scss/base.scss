@@ -7,13 +7,13 @@ body {
     font-size: $font-s;
     font-weight: 400;
     background-color: $app-background;
-    overflow: hidden;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     @include desktop-up {
         height: 100vh;
+        overflow: hidden;
         justify-content: center;
     }
 }
