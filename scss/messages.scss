@@ -1,9 +1,13 @@
 .bounce-in {
     opacity: 0;
-    animation-name: bounceIn;
-    animation-duration: 450ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    -webkit-animation-name: bounceIn;
+            animation-name: bounceIn;
+    -webkit-animation-duration: 450ms;
+            animation-duration: 450ms;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .bubble {
@@ -15,25 +19,32 @@
     line-height: 1.2;
 
     &:nth-child(1) {
-        animation-delay: .5s;
+        -webkit-animation-delay: .5s;
+                animation-delay: .5s;
     }
     &:nth-child(2) {
-        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
     }
     &:nth-child(4) {
-        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+                animation-delay: 3s;
     }
     &:nth-child(5) {
-        animation-delay: 3.5s;
+        -webkit-animation-delay: 3.5s;
+                animation-delay: 3.5s;
     }
     &:nth-child(6) {
-        animation-delay: 4.5s;
+        -webkit-animation-delay: 4.5s;
+                animation-delay: 4.5s;
     }
     &:nth-child(7) {
-        animation-delay: 5.5s;
+        -webkit-animation-delay: 5.5s;
+                animation-delay: 5.5s;
     }
     &:nth-child(8) {
-        animation-delay: 5.5s;
+        -webkit-animation-delay: 5.5s;
+                animation-delay: 5.5s;
     }
 
     &--left {
@@ -63,7 +74,9 @@
         text-align: right;
         margin-bottom: 0;
 
-        animation-delay: 2.55s;
+        -webkit-animation-delay: 2.55s;
+
+                animation-delay: 2.55s;
 
         &__image {
             width: 2.5rem;

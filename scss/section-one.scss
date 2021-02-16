@@ -26,17 +26,22 @@
 }
 
 .fade-in-left {
-    animation: fade-in-left;
+    -webkit-animation: fade-in-left;
+            animation: fade-in-left;
 }
 
 .fade-in-right {
-    animation: fade-in-right;
+    -webkit-animation: fade-in-right;
+            animation: fade-in-right;
 }
 .fade-in-left, .fade-in-right {
     opacity: 0;
-    animation-duration: .5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .app {
