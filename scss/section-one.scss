@@ -11,7 +11,7 @@
         content: "";
         width: 513px;
         height: 65%;
-        background-image: linear-gradient($light-magenta 5%, $light-violet 95%);
+        background-image: linear-gradient(to left bottom, $light-magenta, $light-violet, $light-violet);
         border-bottom-right-radius: 16rem;
         border-bottom-left-radius: 16rem;
         position: absolute;
