@@ -1,7 +1,7 @@
 .section-one {
     margin-top: 4rem;
     margin-bottom: 4rem;
-    @include desktop-up {
+    @include tablet-landscape-up {
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -18,7 +18,7 @@
         z-index: -10;
         top: 0;
         right: 50%;
-        @include desktop-up {
+        @include tablet-landscape-up {
             height: 88%;
             right: 71%;
         }

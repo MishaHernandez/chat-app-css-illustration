@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include desktop-up {
+    @include tablet-landscape-up {
         height: 100vh;
         overflow: hidden;
         justify-content: center;
@@ -23,10 +23,13 @@ body {
 
     flex: 1 0 auto;
     
+    @include tablet-landscape-up {
+        grid-template-columns: 1fr 1.4fr;
+        align-items: center;
+    }
     @include desktop-up {
         grid-template-columns: 1fr 1fr;
         -moz-column-gap: 1.5rem;
-             column-gap: 1.5rem;
-        align-items: center;
+        column-gap: 1.5rem;
     }
 }
